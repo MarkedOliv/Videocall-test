@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "janus-angular-sample-app"
+    }
+  },
+  "defaultProject": "janus-angular-sample-app",
+  "cli": {
+    "analytics": false
+  }
 }

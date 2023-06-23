@@ -3,17 +3,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { VideoRoomComponent } from './containers/video-room/video-room.component';
 import { MinimalVideoRoomComponent } from './containers/minimal-video-room/minimal-video-room.component';
+import { LoginPageComponent } from './auth/pages/login-page/login-page.component';
 
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'default'
-  }, {
+    redirectTo: 'auth'
+  },
+  {
+    path: 'auth',
+    component: LoginPageComponent,
+  },
+  {
     path: 'default',
     component: VideoRoomComponent,
-  }, {
+  },
+  {
     path: 'minimal',
     component: MinimalVideoRoomComponent,
   },
